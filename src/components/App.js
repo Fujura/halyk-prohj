@@ -5,15 +5,16 @@ import Header from "./bodyHTML/header/Header";
 import CardContainer from "./Card/CardContainer";
 import Login from "./Login/Login";
 import Home from "../pages/Home";
-import ItemCatalog from "./bodyHTML/ItemCatalog/ItemCatalog.js";
 import Scan from "../pages/Scan.js";
+import CatalogPage from "../pages/CatalogPage.js";
 
 const App = () => {
   return (
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<CatalogPage />} />
+          <Route path="/categories" element={<Home />} />
           <Route path="/scan" element={<Scan />} />
           <Route path="/login" element={<Login />} />
         </Routes>

@@ -27,7 +27,7 @@ const QRCodeScanner = (props) => {
   return (
     <div>
       {item ? (
-        <Card item={item} type="viewInfo" />
+        <Card item={item} />
       ) : (
         <div>
           <QrReader
