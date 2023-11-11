@@ -24,27 +24,28 @@ export default function Login() {
   }
   return (
     <section className={styles.loginContainer}>
+      <div className={styles.form__container}>
       <h1 className={styles.loginHeader}>Sign In</h1>
-      <div className="">
+      <div >
         <div className=""></div>
-        <div className="">
+        <div>
           <form onSubmit={onSubmit}>
+            <h5 className={styles.inputTitle}>Email</h5>
             <input
-              className=""
+              className={styles.formInput}
               type="email"
               id="email"
               value={email}
               onChange={onChange}
-              placeholder="Email address"
             />
             <div className="">
+              <h5 className={styles.inputTitle}>Password</h5>
               <input
-                className=""
+                className={styles.formInput}
                 type={showPassword ? "text" : "password"}
                 id="password"
                 value={password}
                 onChange={onChange}
-                placeholder="Password"
               />
             </div>
             <div className="">
@@ -55,11 +56,12 @@ export default function Login() {
                 </Link>
               </p>
             </div>
-            <button className="" type="submit">
+            <button className={styles.button} type="submit">
               Sign in
             </button>
           </form>
         </div>
+      </div>
       </div>
     </section>
   );
