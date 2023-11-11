@@ -1,0 +1,6 @@
+.loginContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
