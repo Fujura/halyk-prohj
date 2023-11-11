@@ -41,12 +41,14 @@ const NavBar = () => {
                 <a class="nav-link text-white" href="#"></a>
               </li> */}
           </ul>
-          <Link
-            to="/logout"
-            className="navbar-text text-white text-decoration-none cursor-pointer"
-          >
-            Log Out
-          </Link>
+          <li class="nav-item">
+            <Link
+              to="/login"
+              className="navbar-text text-white text-decoration-none cursor-pointer"
+            >
+              Log Out
+            </Link>
+          </li>
         </div>
       </div>
     </nav>
