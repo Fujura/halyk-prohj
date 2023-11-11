@@ -1,0 +1,114 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Планшет",
+      "photoUrl": "https://i5.walmartimages.com/seo/Lenovo-Tab-M10-Plus-3rd-Gen-10-Tablet-64GB-Storage-4GB-Memory-Android-12-FHD-Display_6d20d86e-e339-4dea-a97d-788dbf71f08c.50da7e377a5410315db7b2430fc13a86.png",
+      "category": "Электроника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Al-Farabi 35",
+      "expectedLocation": null,
+      "numbers": "300"
+    },
+    {
+      "id": "2",
+      "name": "Ноутбук",
+      "photoUrl": "https://i5.walmartimages.com/seo/Lenovo-ThinkPad-X1-Carbon-7th-Gen-Laptop-14-FHD-Intel-Core-i7-8665U-8GB-RAM-256GB-PCIe-NVMe-SSD-Intel-UHD-Graphics-620-Windows-10-Pro_68576b25-cd3c-4a02-b1a9-4a509eb8480b.4c0769cb97c42ab2566d3637ac470f5f.png",
+      "category": "Электроника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Dostyk 55",
+      "expectedLocation": null,
+      "numbers": "100"
+    },
+    {
+      "id": "3",
+      "name": "Смартфон",
+      "photoUrl": "https://i5.walmartimages.com/seo/Apple-iPhone-13-Pro-128GB-Silver_5eb8cb3c-8964-4461-b0c0-57d594a0d7ff.63ba4d42a79990511608057e456cf963.png",
+      "category": "Электроника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Abay 12",
+      "expectedLocation": null,
+      "numbers": "200"
+    },
+    {
+      "id": "4",
+      "name": "Фотоаппарат",
+      "photoUrl": "https://i5.walmartimages.com/seo/Canon-EOS-RP-Mirrorless-Digital-Camera-Body_96e75c3a-4f8b-4c92-91c0-1bf9d4625e29.0792b32efb60b0fbd1e62b05d9812ba6.png",
+      "category": "Фототехника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Raiymbek 75",
+      "expectedLocation": null,
+      "numbers": "50"
+    },
+    {
+      "id": "5",
+      "name": "Наушники",
+      "photoUrl": "https://i5.walmartimages.com/seo/Apple-AirPods-Pro_8a6c83e9-8bb7-4f10-9e95-6d7a0889228b.433ae113f94b86ad840b43294e5af49d.png",
+      "category": "Аудиотехника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Gogol 20",
+      "expectedLocation": null,
+      "numbers": "150"
+    },
+    {
+      "id": "6",
+      "name": "Телевизор",
+      "photoUrl": "https://i5.walmartimages.com/seo/Sceptre-32-Class-HD-720P-LED-TV-X322BV-SR_00121f3f-734b-496b-b89e-0707a42e9d9f.22ff14bde35c0e983ce2d53a11a0d057.png",
+      "category": "Электроника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Al-Farabi 120",
+      "expectedLocation": null,
+      "numbers": "80"
+    },
+    {
+      "id": "7",
+      "name": "Холодильник",
+      "photoUrl": "https://i5.walmartimages.com/seo/Galanz-4-3-Cu-Ft-Single-Door-Mini-Fridge-Garage-Ready-Stainless-Steel-Look_7ed5f3c9-3dd3-4cd8-b8db-70cb1a8f8664.71a81bd23e0d60a66b1508fb8a28ea13.png",
+      "category": "Бытовая техника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Baitursynov 10",
+      "expectedLocation": null,
+      "numbers": "30"
+    },
+    {
+      "id": "8",
+      "name": "Микроволновка",
+      "photoUrl": "https://i5.walmartimages.com/seo/Farberware-1-2-Cu-Ft-1100-Watt-Microwave-Oven-with-Grill-Function-Stainless-Steel-Black_942d39a1-c464-47f2-9011-951e0ac68c0a.25a398c9ef87e28fb116b0f6c9c99cf5.png",
+      "category": "Бытовая техника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Satpaev 5",
+      "expectedLocation": null,
+      "numbers": "20"
+    },
+    {
+      "id": "9",
+      "name": "Утюг",
+      "photoUrl": "https://i5.walmartimages.com/seo/Mainstays-Steel-Clothes-Iron-Red_9a074a89-0713-4473-917e-d0c0e6e51716.7753c36bbd4743f52ad9a968a93a5a8a.png",
+      "category": "Бытовая техника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Timiryazeva 30",
+      "expectedLocation": null,
+      "numbers": "10"
+    },
+    {
+      "id": "10",
+      "name": "Кофеварка",
+      "photoUrl": "https://i5.walmartimages.com/seo/Keurig-K-Classic-Single-Serve-K-Cup-Pod-Coffee-Maker-Rhubarb_6466a20f-4e58-4c02-bd6f-75dcb152f97d.27b6a8d720ff14d8c971100d9a1aaeb3.png",
+      "category": "Бытовая техника",
+      "sentDate": null,
+      "acceptedDate": "04/02/2023",
+      "location": "Almaty, Satpaev 15",
+      "expectedLocation": null,
+      "numbers": "15"
+    }
+  ]
+}
