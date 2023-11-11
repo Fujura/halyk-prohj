@@ -15,14 +15,14 @@ const NavBar = () =>{
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="#">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Features</a>
+                <a class="nav-link text-white" href="#">Сканировать QR</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Pricing</a>
-              </li>
+              {/* <li class="nav-item">
+                <a class="nav-link text-white" href="#"></a>
+              </li> */}
             </ul>
             <a class="navbar-text text-white text-decoration-none cursor-pointer">
               Log Out

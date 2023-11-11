@@ -23,3 +23,7 @@
 .cursor-pointer{
   cursor: pointer;
 }
+
+.nav-item{
+  margin: 0 15px;
+}
