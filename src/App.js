@@ -1,7 +1,10 @@
+import QrReader from "./QrReader/QrReader";
+
 function App() {
   return (
     <div className="App">
-      <div>Trying</div>
+      <QrReader />
+
     </div>
   );
 }
