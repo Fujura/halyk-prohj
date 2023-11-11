@@ -42,7 +42,7 @@ const NavBar = () => {
               </li> */}
           </ul>
           <Link
-            to="/logout"
+            to="/login"
             className="navbar-text text-white text-decoration-none cursor-pointer"
           >
             Log Out

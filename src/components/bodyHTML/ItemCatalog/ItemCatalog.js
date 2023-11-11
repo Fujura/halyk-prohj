@@ -2,6 +2,7 @@ import styles from './ItemCatalog.module.css';
 import img1 from './furniture.jpg';
 import img2 from './electronics.png';
 import img3 from './tripple-dot.webp';
+import { Link } from "react-router-dom";
 
 const ItemCatalog = () =>{
     return(
@@ -28,7 +29,11 @@ const ItemCatalog = () =>{
                         alt='img'
                         className={styles.image}
                         ></div>
-                        <button className={styles.button}>Открыть</button>
+                        <button className={styles.button}><Link
+                to="/items"
+                className="nav-link active text-white"
+                aria-current="page"
+              >Открыть</Link></button>
                     </div>
                 </div>
                 <div className="col-xl-4 col-md-6">
