@@ -1,8 +1,25 @@
-import React, { useState } from 'react';
-import { QrReader } from 'react-qr-reader';
+import React, { useState } from "react";
+import { QrReader } from "react-qr-reader";
 
-const Test = (props) => {
-  const [data, setData] = useState('No result');
+const QRCodeScanner = (props) => {
+  const [data, setData] = useState("No result");
+  function getItem(id) {
+    fetch(`https://example.com/api/data/${id}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Обработка данных после успешного получения
+        console.log(data);
+      })
+      .catch((error) => {
+        // Обработка ошибок
+        console.error("Fetch error:", error);
+      });
+  }
 
   return (
     <div>
@@ -10,17 +27,16 @@ const Test = (props) => {
         onResult={(result, error) => {
           if (!!result) {
             setData(result?.text);
-            console.log(data)
+            getItem(result?.text);
           }
 
           if (!!error) {
             console.info(error);
           }
         }}
-        style={{ width: '50%', height: '70%'}}
       />
       <p>{data}</p>
     </div>
   );
 };
-export default QrReader;
+export default QRCodeScanner;

@@ -1,10 +1,9 @@
-import QrReader from "./QrReader/QrReader";
+import QRCodeScanner from "./QrReader/QrReader";
 
 function App() {
   return (
     <div className="App">
-      <QrReader />
-
+      <QRCodeScanner />
     </div>
   );
 }
