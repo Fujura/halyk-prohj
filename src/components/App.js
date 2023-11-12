@@ -5,6 +5,7 @@ import Login from "./Login/Login";
 import Home from "../pages/Home";
 import Scan from "../pages/Scan.js";
 import SubItems from "../pages/SubItems.js";
+import FaqPage from "../pages/FaqPage.js";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/items/other" element={<SubItems value="other" />} />
           <Route path="/scan" element={<Scan />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/faq" element={<FaqPage />} />
         </Routes>
       </div>
     </Router>

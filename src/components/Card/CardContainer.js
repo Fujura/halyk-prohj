@@ -32,10 +32,16 @@ const CardContainer = ({ value }) => {
       {items
         .filter((item) => item.category === value)
         .map((item) => {
+          if(item.length == 0){
+            return (<h2>Товаров не найдено</h2>)
+          }
           console.log("Filtered Item:", item); // Консоль лог для отфильтрованных элементов
           return <Card key={item.id} item={item} type="viewInfo" />;
           // Вы можете использовать различные значения для 'type' в зависимости от типа карточки
         })}
+        {items.filter((item) => item.category === value).length === 0 && (
+        <h2 className={styles.notFound}>В этой категории нет предметов</h2>
+      )}
     </div>
   );
 };

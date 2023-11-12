@@ -5,3 +5,8 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+
+.notFound{
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+}
