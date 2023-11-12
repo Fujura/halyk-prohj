@@ -1,7 +1,6 @@
-import QRCodeScanner from "./QrReader/QrReader";
+import QRCodeScanner from "./QrReader/QrReader.js"
 import GeoLocation from "./GetCurrentLocation/GetLocation";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./bodyHTML/header/Header.js";
 import Login from "./Login/Login";
 import Home from "../pages/Home";
 import Scan from "../pages/Scan.js";

@@ -26,7 +26,7 @@ const NavBar = () => {
             <li class="nav-item">
               <Link
                 to="/"
-                className="nav-link active text-white"
+                className="nav-link text-white"
                 aria-current="page"
               >
                 Главная
