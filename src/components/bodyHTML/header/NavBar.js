@@ -38,7 +38,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li class="nav-item">
-                <Link class="nav-link text-white" href="#" to="/faq">Faq</Link>
+                <Link class="nav-link text-white" href="#" to="/faq">Ответы на вопросы</Link>
               </li>
           </ul>
           <li class="nav-item">
