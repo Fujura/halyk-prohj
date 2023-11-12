@@ -16,7 +16,14 @@ const ItemCatalog = () => {
               alt="img"
               className={styles.image}
             ></div>
-            <button className={styles.button}>Открыть</button>
+            <button className={styles.button}>
+              <Link
+                to="/items/furniture"
+                className="text-white text-decoration-none"
+              >
+                Открыть
+              </Link>
+            </button>
           </div>
         </div>
 
@@ -29,7 +36,10 @@ const ItemCatalog = () => {
               className={styles.image}
             ></div>
             <button className={styles.button}>
-              <Link to="/items" className="text-white text-decoration-none">
+              <Link
+                to="/items/electronics"
+                className="text-white text-decoration-none"
+              >
                 Открыть
               </Link>
             </button>
@@ -43,7 +53,14 @@ const ItemCatalog = () => {
               alt="img"
               className={styles.image}
             ></div>
-            <button className={styles.button}>Открыть</button>
+            <button className={styles.button}>
+              <Link
+                to="/items/other"
+                className="text-white text-decoration-none"
+              >
+                Открыть
+              </Link>
+            </button>
           </div>
         </div>
       </div>

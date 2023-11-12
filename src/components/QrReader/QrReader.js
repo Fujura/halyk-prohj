@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { QrReader } from "react-qr-reader";
 import Card from "../Card/Card";
+import styles from "./QrReader.module.css";
 
 const QRCodeScanner = (props) => {
   const [data, setData] = useState("No result");
@@ -27,7 +28,9 @@ const QRCodeScanner = (props) => {
   return (
     <div>
       {item ? (
-        <Card item={item} />
+        <div className={styles.qrContainer}>
+          <Card item={item} />
+        </div>
       ) : (
         <div>
           <QrReader

@@ -24,6 +24,30 @@ export default function Card({ item, type }) {
 }
 
 function CardOnTheWay({ item }) {
+  const acceptItem = async () => {
+    try {
+      // Отправляем запрос на сервер для подтверждения принятия элемента
+      const response = await fetch("https://example.com/api/acceptItem", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ itemId: item.id }),
+      });
+
+      if (!response.ok) {
+        console.error(`Failed to accept item. Status: ${response.status}`);
+        // Дополнительная обработка ошибок, если необходимо
+        return;
+      }
+
+      console.log("Item accepted successfully");
+      // Здесь вы можете обновить интерфейс или выполнить другие действия после успешного подтверждения принятия элемента
+    } catch (error) {
+      console.error("Error during item acceptance:", error);
+      // Дополнительная обработка ошибок, если необходимо
+    }
+  };
   return (
     <div className={styles.cardContainer}>
       <h1>{item.name}</h1>
@@ -31,10 +55,8 @@ function CardOnTheWay({ item }) {
       <p>Категория: {item.category}</p>
       <p>Дата отправки: {item.sentDate}</p>
       <p>В пути: {item.expectedLocation}</p>
-      <p>Количество: {item.numbers}</p>
       <div className={styles.buttonContainer}>
-        <button>Удалить</button>
-        <button>Добавить</button>
+        <button onClick={acceptItem}>Принять</button>
       </div>
     </div>
   );
@@ -133,7 +155,6 @@ function CardPresent({ item }) {
           <button onClick={handleStartEditing}>Изменить</button>
         )}
       </p>
-      <p>Количество: {item.numbers}</p>
       <div className={styles.buttonContainer}>
         <button onClick={handleDeleteItem}>Удалить</button>
       </div>

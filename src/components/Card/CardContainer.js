@@ -3,7 +3,7 @@ import Card from "./Card"; // Подключите ваш компонент Car
 import styles from "./CardContainer.module.css";
 import data from "./data.json"; // Импортируем данные
 
-const CardContainer = () => {
+const CardContainer = ({ value }) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -29,10 +29,13 @@ const CardContainer = () => {
 
   return (
     <div className={styles.cardsContainer}>
-      {items.map((item) => (
-        <Card key={item.id} item={item} type="viewInfo" />
-        // Вы можете использовать различные значения для 'type' в зависимости от типа карточки
-      ))}
+      {items
+        .filter((item) => item.category === value)
+        .map((item) => {
+          console.log("Filtered Item:", item); // Консоль лог для отфильтрованных элементов
+          return <Card key={item.id} item={item} type="viewInfo" />;
+          // Вы можете использовать различные значения для 'type' в зависимости от типа карточки
+        })}
     </div>
   );
 };

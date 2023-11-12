@@ -20,7 +20,27 @@ export default function Login() {
   async function onSubmit(e) {
     e.preventDefault();
     try {
-    } catch (error) {}
+      // Assuming your API endpoint for login is '/api/login'
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // If the login is successful, you might want to handle the success here.
+        // For example, you can navigate to another page.
+        navigate("/");
+      } else {
+        // If the login is unsuccessful, you might want to handle the error.
+        // For example, display an error message to the user.
+        console.error("Login failed");
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
   }
   return (
     <section className={styles.loginContainer}>
