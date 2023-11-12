@@ -1,29 +1,33 @@
-.logo{
+.logo {
   width: 75px;
   height: 75px;
 }
 
-.navbar{
-  background: -webkit-linear-gradient(45deg, rgb(0, 133, 102) 48%, rgb(5, 79, 61));
+.navbar {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 133, 102) 48%,
+    rgb(5, 79, 61)
+  );
   background: -moz-linear-gradient(45deg, rgb(0, 133, 102) 48%, rgb(5, 79, 61));
   background: linear-gradient(45deg, rgb(0, 133, 102) 48%, rgb(5, 79, 61));
 }
 
-.navbar-brand{
+.navbar-brand {
   display: flex;
   align-items: center;
-  
 }
 
-.navbar-brand h2{
+.navbar-brand h2 {
   margin-top: 10px;
-  
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
-.nav-item{
+.nav-item {
   margin: 0 15px;
+  list-style: none;
 }
+

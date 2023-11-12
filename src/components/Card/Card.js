@@ -108,7 +108,6 @@ function CardPresent({ item }) {
       <h1>{item.name}</h1>
       <img src={item.photoUrl} alt={item.name}></img>
       <p>Категория: {item.category}</p>
-      <p>Дата получения: {item.acceptedDate}</p>
       <p>
         Местоположение:
         {isEditing ? (
@@ -173,10 +172,7 @@ function CardInfo({ item }) {
       <h1>{item.name}</h1>
       <img src={item.photoUrl}></img>
       <p>Категория: {item.category}</p>
-      <p>Дата отправки: {item.sentDate}</p>
-      <div className={styles.buttonContainer}>
-        <button onClick={handleAcceptItem}>Принять</button>
-      </div>
+      <p>Количество: {item.numbers}</p>
     </div>
   );
 }

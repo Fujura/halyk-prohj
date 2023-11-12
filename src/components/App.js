@@ -1,13 +1,10 @@
-import QRCodeScanner from "./GetCurrentLocation/QrReader/QrReader.js"
+import QRCodeScanner from "./QrReader/QrReader.js"
 import GeoLocation from "./GetCurrentLocation/GetLocation";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./bodyHTML/header/Header";
-import CardContainer from "./Card/CardContainer";
 import Login from "./Login/Login";
 import Home from "../pages/Home";
-import ItemCatalog from "./bodyHTML/ItemCatalog/ItemCatalog.js";
 import Scan from "../pages/Scan.js";
-import SubItem from "../pages/SubItem.js";
+import SubItems from "../pages/SubItems.js";
 
 const App = () => {
   return (
@@ -15,7 +12,7 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/items" element={<SubItem />}/>
+          <Route path="/items" element={<SubItems />} />
           <Route path="/scan" element={<Scan />} />
           <Route path="/login" element={<Login />} />
         </Routes>

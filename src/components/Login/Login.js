@@ -25,43 +25,43 @@ export default function Login() {
   return (
     <section className={styles.loginContainer}>
       <div className={styles.form__container}>
-      <h1 className={styles.loginHeader}>Sign In</h1>
-      <div >
-        <div className=""></div>
+        <h1 className={styles.loginHeader}>Sign In</h1>
         <div>
-          <form onSubmit={onSubmit}>
-            <h5 className={styles.inputTitle}>Email</h5>
-            <input
-              className={styles.formInput}
-              type="email"
-              id="email"
-              value={email}
-              onChange={onChange}
-            />
-            <div className="">
-              <h5 className={styles.inputTitle}>Password</h5>
+          <div className=""></div>
+          <div>
+            <form onSubmit={onSubmit}>
+              <h5 className={styles.inputTitle}>Email</h5>
               <input
                 className={styles.formInput}
-                type={showPassword ? "text" : "password"}
-                id="password"
-                value={password}
+                type="email"
+                id="email"
+                value={email}
                 onChange={onChange}
               />
-            </div>
-            <div className="">
-              <p className="mb-6">
-                Don't have an account?
-                <Link to="/sign-up" className="">
-                  Register
-                </Link>
-              </p>
-            </div>
-            <button className={styles.button} type="submit">
-              Sign in
-            </button>
-          </form>
+              <div className="">
+                <h5 className={styles.inputTitle}>Password</h5>
+                <input
+                  className={styles.formInput}
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  value={password}
+                  onChange={onChange}
+                />
+              </div>
+              <div className="">
+                <p className="mb-6">
+                  Don't have an account?
+                  <Link to="/sign-up" className="">
+                    Register
+                  </Link>
+                </p>
+              </div>
+              <button className={styles.button} type="submit">
+                Sign in
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
